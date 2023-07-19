@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="keywords" content="MM-2D,2D 3D, 2D, 3D, Myanmar 2D 3D, Myanmar 2D, Myanmar 3D, 3D 2D, 2D Myanmar, Thai SET" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>မြန်မာနှစ်လုံးထီ</title>
+    <script src="https://kit.fontawesome.com/c3ce1fe727.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+      body {
+        background: #26324a;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="container">
+      <div class="chart" id="logout-alert">
+        <small>အကောင့်ထွက်မှာသေချာပါသလား</small>
+        <div>
+          <b class="vb t-sh text-danger" id="yes-logout">ထွက်မယ်</b>
+          <b class="vb t-sh" id="no-logout">မထွက်ဘူး</b>
+        </div>
+      </div>
+      
+      <div id="hte-lucky-peoples-page" class="page">
+        <div class="to-main-page">
+          <i class="fa-solid vb fa-arrow-left"></i>
+          <h4>ကံထူးရှင်များစာရင်း</h4>
+        </div>
+        <div class="chart title-bar">
+          <b>ရက်စွဲ</b>
+          <b>ဖုန်း</b>
+          <b>ထိုးငွေ</b>
+        </div>
+        <div class="log-container" id="hte-lucky-peoples-container"></div>
+      </div>
+      
+      <div id="hte-results-page" class="page">
+        <div class="to-main-page">
+          <i class="fa-solid vb fa-arrow-left"></i>
+          <h4>ထီထွက်မှတ်တမ်းများ</h4>
+        </div>
+        <div class="log-container" id="hte-results-page-container"></div>
+      </div>
+      
+      <div id="profile-page" class="page">
+        <div class="to-main-page">
+          <i class="fa-solid vb fa-arrow-left"></i>
+          <h4>ပရိုဖိုင်</h4>
+          <i id="logout" class="fa-solid fa-door-open vb"></i>
+        </div>
+        <div class="log-container">
+          <div class="chart profile-details">
+            <div class="left">🤵🏻</div>
+            <div class="right">
+              <div>
+                <small>အမည်</small>
+                <b class="myname">Name</b>
+              </div>
+              <div>
+                <small>လက်ကျန်ငွေ</small>
+                <b class="mybalance">0 ကျပ်</b>
+              </div>
+              <div>
+                <small>အီးလ်မေး</small>
+                <b class="myemail">minkoko.r@gmail.com</b>
+              </div>
+              <div>
+                <small>ဖုန်း</small>
+                <b class="myphone">0615845878</b>
+              </div>
+              <div>
+                <small>ထုတ်ငွေ</small>
+                <b class="mycash_out">0 ကျပ်</b>
+              </div>
+            </div>
+          </div>
+          <div class="chart" id="money-transfer">
+            <small>ငွေသွင်းငွေထုတ်</small>
+            <a href="viber://add?number=959404687032" class="vb chat">
+              <i class="fa-brands fa-viber"></i>
+              <small>Viber</small>
+            </a>
+            <a href="https://m.me/twod404" class="vb chat">
+              <i class="fa-brands fa-facebook-messenger"></i>
+              <small>Messenger</small>
+            </a>
+          </div>
+        </div>
+        <div class="tab-bar">
+          <b id="my-hte-lucky-log" class="vb">ထိပေါက်မှတ်တမ်း</b>
+          <b id="deposit-log" class="vb">ငွေသွင်းမှတ်တမ်း</b>
+          <b id="withdrawal-log" class="vb">ငွေထုတ်မှတ်တမ်း</b>
+          <div class="location-ball"></div>
+        </div>
+        <div id="log-container">
+          
+        </div>
+      </div>
+      
+      <div id="today-hte-page" class="page">
+        <div class="to-main-page">
+          <i class="fa-solid vb fa-arrow-left"></i>
+          <h6 class="sess">ယနေ့ထီဂဏန်းများ</h6>
+        </div>
+        <div class="chart title-bar">
+          <b>အမည်</b>
+          <b>ထီဂဏန်း</b>
+          <b>ထိုးငွေ</b>
+        </div>
+        <div class="log-container" id="today-hte-container">
+          
+        </div>
+      </div>
+      
+      <div id="main-page" class="page">
+        <nav>
+          <div class="t-sh" id="brand">
+            <b>2</b>
+            <b class="text-danger">D</b>
+          </div>
+          <div class="balance-div">
+            <b class="mybalance">0 ကျပ်</b>
+          </div>
+        </nav>
+        <small class="mt-2 py-2 bg-success d-flex justify-content-center">မနက် ၁ နာရီမှ ၁၁ နာရီအထိ ညနေ ၁ နာရီမှ ၄ နာရီအထိ</small>
+        <div class="active-hte chart">
+          <small class="today sess"></small>
+          <b class="res-hte a-star t-sh live-twod">--</b>
+          <div class="dl">
+            <div class="dm">
+              <small>SET</small>
+              <b class="live-set">--</b>
+            </div>
+            <div class="dm">
+              <small>VALUE</small>
+              <b class="live-value">--</b>
+            </div>
+          </div>
+        </div>
+        <div class="dl">
+          <div class="dm res">
+            <small>12:01 မနက်ပိုင်း</small>
+            <b class="res-hte dash t-sh am-twod">--</b>
+            <div class="dl">
+              <div class="dm">
+                <small>SET</small>
+                <b class="am-set dash">--</b>
+              </div>
+              <div class="dm">
+                <small>VALUE</small>
+                <b class="am-value dash">--</b>
+              </div>
+            </div>
+          </div>
+          <div class="dm res">
+            <small>04:31 ညနေပိုင်း</small>
+            <b class="res-hte dash t-sh pm-twod">--</b>
+            <div class="dl">
+              <div class="dm">
+                <small>SET</small>
+                <b class="pm-set dash">--</b>
+              </div>
+              <div class="dm">
+                <small>VALUE</small>
+                <b class="pm-value dash">--</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab">
+          <div id="hte-lucky-peoples" class="vb">
+            <i class="fa-solid fa-ranking-star"></i>
+            <small>ကံထူးရှင်</small>
+          </div>
+          <div id="hte-results" class="vb">
+            <i class="fa-solid fa-calendar-week"></i>
+            <small>ထွက်မှတ်တမ်း</small>
+          </div>
+          <div id="profile" class="vb">
+            <i class="fa-solid fa-user"></i>
+            <small>ပရိုဖိုင်</small>
+          </div>
+          <div id="today-hte" class="vb">
+            <i class="fa-solid fa-calendar-day"></i>
+            <small>ယနေ့ဂဏန်း</small>
+          </div>
+        </div>
+        <div id="add-hte-box">
+          <h4>ထီထိုးရန်</h4>
+          <div>
+            <input type="number" id="hte-number" placeholder="ထီဂဏန်း">
+            <input type="number" id="amount-kyats" placeholder="ထိုးရန်ငွေပမာဏ">
+          </div>
+          <button type="button" class="vb" id="add-hte">ထိုးရန်</button>
+        </div>
+        <div class="chart hte-chart" id="today-my-add-hte">
+          <h6 class="sess">ယနေ့မိမိထိုးထားသည့်ထီဂဏန်းများ</h6>
+          <div class="title">
+            <b>ထီဂဏန်း</b>
+            <b>ထိုးငွေ</b>
+            <b>ပေါက်ငွေ</b>
+          </div>
+          <div class="hte-container" id="today-my-add-hte-container">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/script.js"></script>
+
+  </body>
+</html>

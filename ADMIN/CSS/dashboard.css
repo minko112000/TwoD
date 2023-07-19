@@ -1,0 +1,327 @@
+body {
+  background: #26324a;
+}
+
+#wrapper-page {
+  display: none;
+}
+
+main, #wrapper-page {
+  width: 100%;
+  height: calc(100% - 60px);
+  margin-top: 5px;
+  padding: 6px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+
+main {
+  overflow-y: scroll !important;
+}
+
+#wrapper-page .inner-page {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+nav {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#bar-icon {
+  font-size: 1.2em;
+}
+
+#side-bar {
+  position: absolute;
+  height: 100%;
+  width: 75%;
+  background: #26324a;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  transform: translateX(110%);
+  transition: all .5s;
+  overflow-x: hidden;
+  padding: 6px;
+}
+
+.side-bar-show {
+  transform: translateX(0%) !important;
+}
+
+#side-bar .item {
+  height: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(2px);
+  margin-top: 12px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#side-bar .item small {
+  font-size: .8em;
+  letter-spacing: 1px;
+  width: calc(100% - 49px);
+}
+
+#side-bar .item i:first-child {
+  height: 30px;
+  width: 30px;
+  background: #26324a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#users-search {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(2px);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.h {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:  .8em;
+}
+
+.h > b {
+  width: calc(20% - 4px);
+  overflow-x: scroll;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#item-users-page #users-container {
+  height: calc(100% - 135px);
+  width: 100%;
+  overflow-y: scroll;
+  padding-bottom: 35px;
+}
+
+#users-container div b {
+  font-size: .8em !important;
+}
+
+#users-container div:nth-child(odd) {
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(2px);
+}
+
+#add-alert {
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 200px);
+  height: 60px;
+  width: 400px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-alert b {
+  width: calc(100% - 104px);
+}
+
+#add-alert button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+nav {
+  height: 55px;
+  width: 100%;
+  margin-left: 0;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.chart-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#today-money-in-log,
+#money-in-out-log {
+  height: 80px;
+}
+
+#money-in-out-log > .dm,
+#visitors-log > .dm {
+  flex-direction: row;
+}
+
+#money-in-out-log .dm .dm,
+#visitors-log .dm .dm {
+  box-shadow: none !important;
+  background: none!important;
+  backdrop-filter: blur(0) !important;
+}
+
+.close-hte-add,
+.lucky-hte-add,
+.money-in-out-add {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-hte-add input:not(:nth-child(5)),
+.lucky-hte-add input:not(:nth-child(7)),
+.money-in-out-add input {
+  width: 35%;
+  font-size: .9em;
+  border-right: 1px solid #26324a;
+}
+
+.lucky-hte-add input {
+  font-size: .6em !important;
+  width: calc(12.5% - 4.3px) !important;
+}
+
+.close-hte-add input {
+  font-size: .6em !important;
+  width: calc(16% - 4.3px) !important;
+}
+
+.money-in-out-add > div {
+  width: calc(30% - 40px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+  
+.money-in-out-add > div div {
+  border: 1px solid #26324a;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  position: relative;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3a9f1a;
+  font-size: 1.2em;
+}
+
+.money-in-out-add > div div:before {
+  content: attr(data);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .5;
+  font-size: .5em;
+  color: #c7c7c7;
+}
+
+.lucky-amount-add,
+.lucky-hte-add button,
+.close-hte-add button,
+.money-in-out-add button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.today-hte-container {
+  height: 530px;
+  width: 100%;
+  
+}
+
+.today-hte-container h6 {
+  height: 28px;
+  width: 100%;
+  padding: 6px 0;
+  text-align: center;
+}
+
+
+.search-bar {
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #26324a;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: calc(100% - 124px);
+}
+
+.search-bar div {
+  width: 50px;
+  height: 25px;
+  background: #3a9f1a;
+  margin-right: 12px;
+  border-radius: 4px;
+  padding: 3px;
+  font-size: .8em;
+}
+
+.search-bar .check {
+  position: relative;
+}
+
+.search-bar .check:before {
+  content: '✔';
+  position: absolute;
+  height: 100%;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  font-size: 1em;
+  color: #26324a;
+}
+
+#hte-personal-container {
+  height: calc(100% - 150px);
+  overflow-y: scroll;
+}
+
+.hte-personal {
+  height: 50px;
+  flex: none;
+}
+
+.title-bar:not(:last-child) {
+  border-bottom: 1px solid #26324a;
+}
+
+#item-hte-list-page .title-bar b {
+  width: 25% !important;
+  font-size: .7em;
+}

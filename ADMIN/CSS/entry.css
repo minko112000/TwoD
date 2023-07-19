@@ -1,0 +1,26 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#admin-login-box {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#admin-login-box input {
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #26324a;
+}
+
+#admin-login-box #admin-login {
+  width: 125px;
+  height: 40px;
+  background: #26324a;
+}
